@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preview - Dream Sweet Bouquet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --pink: #e84393;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+      transition: 0.2s linear;
+    }
+
+    body {
+      background: #fff0f3;
+      color: #5a2a3b;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 5%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-img {
+      height: 70px;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-size: 1.6rem;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: var(--pink);
+    }
+
+    .icons a {
+      margin: 0 0.5rem;
+      font-size: 1.6rem;
+      color: #333;
+    }
+
+    .preview-banner {
+      background: url('rose4.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .preview-banner h1 {
+      font-size: 4.5rem;
+    }
+
+    .preview-gallery {
+      padding: 6rem 10%;
+      background-color: #fff;
+    }
+
+    .preview-gallery h2 {
+      text-align: center;
+      font-size: 3.6rem;
+      color: var(--pink);
+      margin-bottom: 4rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .gallery-item {
+      background: #fff0f8;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .gallery-item h3 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      color: #e84393;
+    }
+
+    .gallery-item p {
+      font-size: 1.4rem;
+      padding: 0 1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 40px 10%;
+    }
+
+    .footer-cols {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-col {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      font-size: 1.4rem;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--pink);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      font-size: 1.3rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="loggo (2).png" alt="Logo" class="logo-img">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="preview.html">Preview</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-user"></a>
+    </div>
+  </header>
+
+  <div class="preview-banner">
+    <h1>Our Preview</h1>
+  </div>
+
+  <section class="preview-gallery">
+    <h2>Featured Bouquets</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="romantic.jpeg" alt="Romantic Roses">
+        <h3>Romantic Roses</h3>
+        <p>A classic choice for anniversaries or Valentine's Day.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="shsd.jpg" alt="Sunshine Bouquet">
+        <h3>Sunshine Bouquet</h3>
+        <p>Brighten someone's day with vibrant yellows and oranges.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="psg.jpg" alt="Blushing Peonies">
+        <h3>Blushing Peonies</h3>
+        <p>Soft pastel hues for delicate elegance and beauty.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sos.jpg" alt="Elegant Orchids">
+        <h3>Elegant Orchids</h3>
+        <p>Perfect for expressing sophistication and grace.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sns.jpg" alt="Spring Mix">
+        <h3>Spring Mix</h3>
+        <p>Colorful seasonal flowers to brighten any space.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sunrice.jpg" alt="Sunrise Delight">
+        <h3>Sunrise Delight</h3>
+        <p>Soft oranges and reds for a warm, inviting bouquet.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">+254 724 491 544</a></li>
+          <li><a href="#">i

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Sweet Bouquet - Services</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --pink: #e84393;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+      transition: 0.2s linear;
+    }
+
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fff0f3;
+      color: #5a2a3b;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 5%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-img {
+      height: 70px;
+      width: auto;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-size: 1.6rem;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: var(--pink);
+    }
+
+    .icons a {
+      margin: 0 0.5rem;
+      font-size: 1.6rem;
+      color: #333;
+    }
+
+    .services-banner {
+      background: url('rose5.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .services-banner h1 {
+      font-size: 4.8rem;
+    }
+
+    .services-section {
+      padding: 6rem 10%;
+      background-color: #fff;
+    }
+
+    .services-section h2 {
+      text-align: center;
+      font-size: 3.6rem;
+      margin-bottom: 4rem;
+      color: #e91e63;
+    }
+
+    .service-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+    }
+
+    .service-box {
+      background: #fff0f8;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .service-box i {
+      font-size: 4rem;
+      color: #e91e63;
+      margin-bottom: 2rem;
+    }
+
+    .service-box h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-box p {
+      font-size: 1.5rem;
+      color: #666;
+    }
+
+
+
+
+
+    .services {
+  padding: 6rem 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services .heading {
+  font-size: 3rem;
+  color: #e84393;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.services .box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.services .box img {
+  width: 700%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.services .box h3 {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.services .box p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Second services section with images */
+    .services {
+      padding: 5rem 9%;
+    }
+
+    .services .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .services .box {
+      flex: 1 1 250px;
+      background: #fff0f8;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .services .box img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 1rem;
+    }
+    
+
+    .services .box h4 {
+      font-size: 1.8rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .services .box span {
+      font-size: 1.4rem;
+      color: #666;
+    }
+
+/* Extra Services Icons Section */
+.services1 {
+  padding: 5rem 10%;
+  background-color: #fff;
+}
+
+.services1 .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.services1 .box {
+  background: #fff0f8;
+  flex: 1 1 250px;
+  max-width: 280px;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services1 .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.services1 .box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.services1 .box h4 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.services1 .box span {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+
+
+    .image-slider {
+  padding: 4rem 10%;
+  background: #fff0f8;
+  text-align: center;
+}
+
+.image-slider h2 {
+  font-size: 3rem;
+  color: var(--pink);
+  margin-bottom: 2rem;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scrollImages 30s linear infinite;
+}
+
+.slider-track img {
+  height: 200px;
+  width: auto;
+  margin: 0 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Scroll Animation */
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 40px 10%;
+    }
+
+    .footer-cols {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-col {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      font-size: 1.4rem;
+    }
+
+    .footer-col ul li a:hover {
+      color: #e91e63;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      font-size: 1.3rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">
+      <img src="loggo (2).png" alt="Logo" class="logo-img">
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="preview.html">Preview</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-user"></a>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="services-banner">
+    <h1>Our Services</h1>
+  </div>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>What We Offer</h2>
+    <div class="service-boxes">
+      <div class="service-box">
+        <i class="fas fa-shipping-fast"></i>
+        <h3>Same-Day Delivery</h3>
+        <p>We offer fast, same-day delivery in Nairobi and surrounding areas. Fresh flowers, right when you need them.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-gift"></i>
+        <h3>Custom Bouquets</h3>
+        <p>Create a personalized bouquet for any occasion – birthdays, anniversaries, or just because.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-heart"></i>
+        <h3>Event Decoration</h3>
+        <p>Need flowers for your wedding or event? We design floral decor to match your theme.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-leaf"></i>
+        <h3>Eco-Friendly Packaging</h3>
+        <p>We care about nature. All our packages are sustainable and biodegradable.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-phone-volume"></i>
+        <h3>24/7 Support</h3>
+        <p>Got a question or urgent order? Our friendly support team is available anytime to help.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-star"></i>
+        <h3>Quality Guaranteed</h3>
+        <p>We guarantee fresh, high-quality flowers in every arrangement or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="services" id="services">
+    <h1 class="heading">our <span>services</span></h1>
+  
+    <div class="box-container">
+  
+      <div class="box">
+        <img src="bot.jpg" alt="Custom Bouquets">
+        <h3>Custom Bouquets</h3>
+        <p>Tell us your favorite flowers and colors—we’ll create something unique just for you.</p>
+      </div>
+  
+      <div class="box">
+        <img src="bot1.jpg" alt="Same-Day Delivery">
+        <h3>Same-Day Delivery</h3>
+        <p>Place your order before noon and enjoy fast, fresh delivery right to your door.</p>
+      </div>
+  
+      <div class="box">
+        <img src="bot3.jpeg" alt="Event Decoration">
+        <h3>Event Decoration</h3>
+        <p>Weddings, birthdays, or corporate events—we make your special days bloom beautifully.</p>
+      </div>
+  
+      <div class="box">
+        <img src="bot4.jpeg" alt="Flower Subscriptions">
+        <h3>Flower Subscriptions</h3>
+        <p>Receive seasonal blooms every week or month to brighten your home or office space.</p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="image-slider">
+    <h2>Our collections</h2>
+    <div class="slider-container">
+      <div class="slider-track">
+        
+        <div class="slide">
+          <img src="romantic.jpeg" alt="Flower 1" />
+          <div class="caption">
+            <h3>Romantic Roses</h3>
+            <p>Perfect for anniversaries</p>
+          </div>
+        </div>
+  
+        <div class="slide">
+          <img src="shsd.jpg" alt="Flower 2" />
+          <div class="caption">
+            <h3>Sunshine Bouquet</h3>
+            <p>Bright and cheerful blooms</p>
+          </div>
+        </div>
+  
+        <div class="slide">
+          <img src="sos.jpg" alt="Flower 3" />
+          <div class="caption">
+            <h3>Elegant Orchids</h3>
+            <p>Graceful and exotic</p>
+          </div>
+        </div>
+  
+        <div class="slide">
+          <img src="sns.jpg" alt="Flower 4" />
+          <div class="caption">
+            <h3>Spring Mix</h3>
+            <p>Fresh seasonal favorites</p>
+          </div>
+        </div>
+  
+        <div class="slide">
+          <img src="psg.jpg" alt="Flower 5" />
+          <div class="caption">
+            <h3>Blushing Peonies</h3>
+            <p>Soft pastel elegance</p>
+          </div>
+        </div>
+  
+        <!-- Repeat for seamless scrolling -->
+        <div class="slide">
+          <img src="rs.jpg" alt="Flower 1" />
+          <div class="caption">
+            <h3>Romantic Roses</h3>
+            <p>Perfect for anniversaries</p>
+          </div>
+        </div>
+  
+        <div class="slide">
+          <img src="sunrice.jpg" alt="Flower 2" />
+          <div class="caption">
+            <h3>Sunshine Bouquet</h3>
+            <p>Bright and cheerful blooms</p>
+          </div>
+        </div>
+  
+        <!-- Add more duplicates if needed -->
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Extra Services Icons -->
+  <section class="services1" id="services1">
+    <div class="box-container">
+      <div class="box">
+        <img src="delivry.jpeg" alt="delivery">
+        <h4>Delivery</h4>
+        <span>100% secure</span>
+      </div>
+      <div class="box">
+        <img src="pay.jpeg" alt="payment">
+        <h4>Payments</h4>
+        <span>100% secure</span>
+      </div>
+      <div class="box">
+        <img src="support.jpeg" alt="support">
+        <h4>Support</h4>
+        <span>24/7 available</span>
+      </div>
+      <div class="box">
+        <img src="Gift.jpg" alt="gift">
+        <h4>Gift Service</h4>
+        <span>Special occasions</span>
+      </div>
+      <div class="box">
+        <img src="easy return.jpeg" alt="returns">
+        <h4>Returns</h4>
+        <span>Easy & Free</span>
+      </div>
+      
+    </div>
+  </section>
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">+254 724 491 544</a></li>
+          <li><a href="#">inquiry.sweetdream@yahoo.com</a></li>
+          <li><a href="#">Nairobi, Kenya</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Dream Sweet Bouquet. All rights reserved.
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script>
+    const track = document.querySelector('.slider-track');
+    track.addEventListener('mouseover', () => {
+      track.style.animationPlayState = 'paused';
+    });
+    track.addEventListener('mouseout', () => {
+      track.style.animationPlayState = 'running';
+    });
+  </script>
+  
+
+
+
+
+
+
+
+
+</body>
+</html>
